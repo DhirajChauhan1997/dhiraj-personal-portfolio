@@ -1,0 +1,11 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "name": "AP Home Service",
+      "projectType": "Web & App",
+      "technologies": ["Java", "ReactJs", "React Native"]
+    },
+    {}
+  ]
+}

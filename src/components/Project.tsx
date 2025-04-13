@@ -1,11 +1,13 @@
 import { FC, useEffect, useState } from "react";
-import data from "../assets/data/dhiraj.json";
+// import data from "../assets/data/dhiraj.json";
+import { siteData } from "../assets/data/Data";
+import { Project } from "../core/Project";
 import ProjectItem from "./ProjectItem";
 
 const ProjectComponent: FC = () => {
-  const [projects, setProjects] = useState<any>([]);
+  const [projects, setProjects] = useState<Project[]>([]);
   useEffect(() => {
-    setProjects(data.projects);
+    setProjects(siteData.projects);
     return () => {};
   }, []);
 
@@ -37,7 +39,7 @@ const ProjectComponent: FC = () => {
 
           {/* gallery */}
           <div className="gallery full-width" style={{ display: "contents" }}>
-            {projects.map((item) => {
+            {projects.map((item: Project) => {
               return (
                 <ProjectItem
                   name={item.name}

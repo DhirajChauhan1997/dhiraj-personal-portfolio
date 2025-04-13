@@ -2,7 +2,7 @@ import { FC } from "react";
 interface Props {
   name: string;
   projectType: string;
-  technology: string;
+  technology: string[];
 }
 
 const ProjectItem: FC<Props> = (props: Props) => {

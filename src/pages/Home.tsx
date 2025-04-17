@@ -144,7 +144,7 @@ const HomePage = () => {
                     <span className="text">how i work</span>
                   </a>
                 </li>
-                <li className="nav-link">
+                {/* <li className="nav-link">
                   <a href="#blogs">
                     <span className="text">Blogs</span>
                   </a>
@@ -153,7 +153,7 @@ const HomePage = () => {
                   <a href="#testimonials">
                     <span className="text">testimonials</span>
                   </a>
-                </li>
+                </li> */}
                 <li className="nav-link">
                   <a href="#contact">
                     <span className="text">contact</span>
@@ -702,7 +702,9 @@ const HomePage = () => {
                   <div className="experience-wrapper d-flex flex-column">
                     <div className="experience-item">
                       <h5>(Nov 2020 - Jan 2025)</h5>
-                      <h3>Senior Web Developer at eMeasurematics Pvt Ltd:</h3>
+                      <h3>
+                        Senior Software Engineer at eMeasurematics Pvt Ltd:
+                      </h3>
                       <p>
                         eMeasurematics specializes in steel yard management
                         solutions, catering to clients ranging from single-line

@@ -1,4 +1,16 @@
+import { useState } from "react";
+import { Progress } from "rsuite";
+
 const HomePage = () => {
+  const [percent, setPercent] = useState(30);
+  const status = percent === 100 ? "success" : "success";
+  const color = percent === 100 ? "#52c41a" : "#3385ff";
+  const style = {
+    width: 120,
+    display: "inline-block",
+    marginRight: 10,
+  };
+
   return (
     <>
       {/* header section */}
@@ -241,7 +253,7 @@ const HomePage = () => {
               </div>
               <div dir="ltr" className="swiper service-swiper">
                 <div className="swiper-wrapper">
-                  <div className="swiper-slide overflow-visible p-3">
+                  {/* <div className="swiper-slide overflow-visible p-3">
                     <div className="service-card">
                       <div className="card-inner"></div>
                       <div className="content">
@@ -285,7 +297,7 @@ const HomePage = () => {
                         </ul>
                       </div>
                     </div>
-                  </div>
+                  </div> */}
                   <div className="swiper-slide overflow-visible p-3">
                     <div className="service-card">
                       <div className="card-inner"></div>
@@ -297,7 +309,7 @@ const HomePage = () => {
                             <span></span>
                             <span></span>
                           </div>
-                          <h2>02</h2>
+                          <h2>01</h2>
                           <div className="waves-bottom-sm">
                             <span></span>
                             <span></span>
@@ -331,7 +343,7 @@ const HomePage = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="swiper-slide overflow-visible p-3">
+                  {/* <div className="swiper-slide overflow-visible p-3">
                     <div className="service-card">
                       <div className="card-inner"></div>
                       <div className="content">
@@ -375,7 +387,7 @@ const HomePage = () => {
                         </ul>
                       </div>
                     </div>
-                  </div>
+                  </div> */}
 
                   <div className="swiper-slide overflow-visible p-3">
                     <div className="service-card">
@@ -388,7 +400,7 @@ const HomePage = () => {
                             <span></span>
                             <span></span>
                           </div>
-                          <h2>04</h2>
+                          <h2>02</h2>
                           <div className="waves-bottom-sm">
                             <span></span>
                             <span></span>
@@ -457,25 +469,49 @@ const HomePage = () => {
                   <div className="row">
                     <div className="col-md-4">
                       <div className="d-flex flex-column align-items-center mb-4">
-                        <div className="design-chart mb-4"></div>
+                        <div className="design-chart mb-4">
+                          <div style={style}>
+                            <Progress.Circle
+                              percent={80}
+                              strokeColor={color}
+                              // status={status}
+                            />
+                          </div>
+                        </div>
                         <button className="btn btn-outline-secondary px-5">
-                          Design
+                          Backend
                         </button>
                       </div>
                     </div>
                     <div className="col-md-4">
                       <div className="d-flex flex-column align-items-center mb-4">
-                        <div className="branding-chart mb-4"></div>
+                        <div className="branding-chart mb-4">
+                          <div style={style}>
+                            <Progress.Circle
+                              percent={80}
+                              strokeColor={color}
+                              // status={status}
+                            />
+                          </div>
+                        </div>
                         <button className="btn btn-outline-secondary px-5">
-                          Branding
+                          Frontend
                         </button>
                       </div>
                     </div>
                     <div className="col-md-4">
                       <div className="d-flex flex-column align-items-center mb-4">
-                        <div className="ecommerce-chart mb-4"></div>
+                        <div className="ecommerce-chart mb-4">
+                          <div style={style}>
+                            <Progress.Circle
+                              percent={80}
+                              strokeColor={color}
+                              // status={status}
+                            />
+                          </div>
+                        </div>
                         <button className="btn btn-outline-secondary px-5">
-                          Ecommerce
+                          Mobile App
                         </button>
                       </div>
                     </div>
@@ -497,7 +533,8 @@ const HomePage = () => {
                     <div className="skill">
                       <div className="d-flex justify-content-between align-items-center">
                         <span>Front-End Development</span>
-                        <span>90%</span>
+                        {/* <span>90%</span> */}
+                        <Progress.Line percent={90} />
                       </div>
                       <div className="progress">
                         <div
@@ -509,7 +546,8 @@ const HomePage = () => {
                     <div className="skill">
                       <div className="d-flex justify-content-between align-items-center">
                         <span>Back-End Development</span>
-                        <span>85%</span>
+                        {/* <span>85%</span> */}
+                        <Progress.Line percent={85} />
                       </div>
                       <div className="progress">
                         <div
@@ -521,7 +559,8 @@ const HomePage = () => {
                     <div className="skill">
                       <div className="d-flex justify-content-between align-items-center">
                         <span>Full-Stack Development</span>
-                        <span>88%</span>
+                        {/* <span>88%</span> */}
+                        <Progress.Line percent={85} />
                       </div>
                       <div className="progress">
                         <div
@@ -533,7 +572,8 @@ const HomePage = () => {
                     <div className="skill">
                       <div className="d-flex justify-content-between align-items-center">
                         <span>Database Management</span>
-                        <span>80%</span>
+                        {/* <span>80%</span> */}
+                        <Progress.Line percent={85} />{" "}
                       </div>
                       <div className="progress">
                         <div
@@ -545,7 +585,8 @@ const HomePage = () => {
                     <div className="skill">
                       <div className="d-flex justify-content-between align-items-center">
                         <span>Version Control</span>
-                        <span>95%</span>
+                        {/* <span>95%</span> */}
+                        <Progress.Line percent={85} />
                       </div>
                       <div className="progress">
                         <div
@@ -557,7 +598,8 @@ const HomePage = () => {
                     <div className="skill">
                       <div className="d-flex justify-content-between align-items-center">
                         <span>API Integration</span>
-                        <span>87%</span>
+                        {/* <span>87%</span> */}
+                        <Progress.Line percent={85} />
                       </div>
                       <div className="progress">
                         <div
@@ -583,7 +625,15 @@ const HomePage = () => {
                   <div className="row g-3">
                     <div className="col-12 col-sm-6 col-md-4">
                       <div className="d-flex flex-column align-items-center mb-4">
-                        <div className="design-chart mb-4"></div>
+                        <div className="design-chart mb-4">
+                          <div style={style}>
+                            <Progress.Circle
+                              percent={90}
+                              strokeColor={color}
+                              // status={status}
+                            />
+                          </div>
+                        </div>
                         <button className="btn btn-outline-secondary px-5">
                           Hindi
                         </button>
@@ -591,7 +641,15 @@ const HomePage = () => {
                     </div>
                     <div className="col-12 col-sm-6 col-md-4">
                       <div className="d-flex flex-column align-items-center mb-4">
-                        <div className="branding-chart mb-4"></div>
+                        <div className="branding-chart mb-4">
+                          <div style={style}>
+                            <Progress.Circle
+                              percent={70}
+                              strokeColor={color}
+                              // status={status}
+                            />
+                          </div>
+                        </div>
                         <button className="btn btn-outline-secondary px-5">
                           English
                         </button>
@@ -599,7 +657,15 @@ const HomePage = () => {
                     </div>
                     <div className="col-12 col-sm-6 col-md-4">
                       <div className="d-flex flex-column align-items-center mb-4">
-                        <div className="ecommerce-chart mb-4"></div>
+                        <div className="ecommerce-chart mb-4">
+                          <div style={style}>
+                            <Progress.Circle
+                              percent={90}
+                              strokeColor={color}
+                              // status={status}
+                            />
+                          </div>
+                        </div>
                         <button className="btn btn-outline-secondary px-5">
                           Gujarati
                         </button>
@@ -1346,7 +1412,7 @@ const HomePage = () => {
                       <div className="icon-box">
                         <i className="ph ph-phone-call"></i>
                       </div>
-                      <p>+420 652 887 351</p>
+                      <p>+91 99047 XXXXX</p>
                     </div>
                   </div>
                   <div className="col-sm-6 col-xl-4 col-xxl-3">
@@ -1354,7 +1420,7 @@ const HomePage = () => {
                       <div className="icon-box">
                         <i className="ph ph-envelope-open"></i>
                       </div>
-                      <p>emily@devis.com</p>
+                      <p>dhiraj.chauhan1997@gmail.com</p>
                     </div>
                   </div>
                   <div className="col-sm-6 col-xl-4 col-xxl-3">
@@ -1362,7 +1428,7 @@ const HomePage = () => {
                       <div className="icon-box">
                         <i className="ph ph-map-pin"></i>
                       </div>
-                      <p>4730 Crystal Springs Dr, Los Angeles, CA</p>
+                      <p>Surat, Gujarat, India</p>
                     </div>
                   </div>
                   <div className="col-sm-6 col-xl-4 col-xxl-3 d-flex align-items-center">

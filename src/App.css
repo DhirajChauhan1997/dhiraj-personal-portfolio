@@ -80,3 +80,21 @@
 .swiper-wrapper {
   width: 26% !important;
 }
+
+body {
+  font-family: "Poppins", sans-serif !important;
+  background-color: rgb(var(--primary)) !important;
+  color: rgb(var(--black)) !important;
+  font-size: 16px !important;
+  overflow-x: hidden !important;
+}
+
+a:active {
+  color: unset !important;
+  text-decoration: none;
+}
+
+a {
+  color: unset !important;
+  text-decoration: none;
+}

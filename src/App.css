@@ -76,3 +76,7 @@
 .pragraph {
   text-align: justify;
 }
+
+.swiper-wrapper {
+  width: 26% !important;
+}

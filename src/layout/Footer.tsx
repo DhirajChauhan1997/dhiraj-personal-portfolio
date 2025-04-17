@@ -95,8 +95,8 @@ const FooterComponent: FC = () => {
         {/* Footer Bottom */}
         <div className="copyrights text-center">
           <p>
-            © 2020, Avo Template. Made with passion by{" "}
-            <a href="#0">UI-ThemeZ</a>.
+            © 2025,
+            <a href="#0">Dhiraj Chauhan</a>.
           </p>
         </div>
       </div>

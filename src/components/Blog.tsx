@@ -76,7 +76,7 @@ const BlogComponent: FC = () => {
                       <div className="text-center">
                         <button
                           type="submit"
-                          className="simple-btn custom-font cursor-pointer"
+                          className="primary-btn custom-font cursor-pointer"
                         >
                           <span>Send Message</span>
                         </button>

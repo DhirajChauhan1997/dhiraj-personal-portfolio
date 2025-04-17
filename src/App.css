@@ -54,6 +54,19 @@
   background-color: #191b21;
 }
 
+.primary-btn {
+  border-width: 1px;
+  border-color: #ffffff;
+  position: relative;
+  padding: 7px;
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 13px;
+  font-weight: 300;
+  background-color: #595b62;
+}
+
 .logo-title {
   font-size: 1.4rem;
   font-weight: 700;

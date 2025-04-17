@@ -52,3 +52,5 @@ export default tseslint.config({
   },
 })
 ```
+# To Build Docker Image
+docker build -f Dockerfile.dev -t dhiraj-portfolio .

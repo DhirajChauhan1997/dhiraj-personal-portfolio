@@ -9,7 +9,7 @@ const ServiceComponent: FC = () => {
             Best Features
           </h6>
           <h3 className="wow" data-splitting>
-            Services
+            My Expertise
           </h3>
           {/* <span className="tbg">Services</span> */}
         </div>

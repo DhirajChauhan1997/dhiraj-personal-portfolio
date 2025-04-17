@@ -34,7 +34,7 @@ const FooterComponent: FC = () => {
 
               {/* Social Media */}
               <div className="social-icon">
-                <h6 className="custom-font stit simple-btn">Follow Us</h6>
+                <h6 className="custom-font stit">Follow Me</h6>
                 <div className="social">
                   <a href="#0" className="icon">
                     <i className="fab fa-facebook-f"></i>

@@ -1012,7 +1012,7 @@ const HomePage = () => {
                   <span className="circle position-absolute w-100 h-100"></span>
                   <div>
                     <p>05.</p>
-                    <p>text</p>
+                    <p>Test</p>
                   </div>
                 </div>
                 <div className="process col-6">

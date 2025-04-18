@@ -1,10 +1,7 @@
-import { useState } from "react";
 import { Progress } from "rsuite";
 
 const HomePage = () => {
-  const [percent, setPercent] = useState(30);
-  const status = percent === 100 ? "success" : "success";
-  const color = percent === 100 ? "#52c41a" : "#3385ff";
+  const color = "#000000";
   const style = {
     width: 120,
     display: "inline-block",
@@ -532,7 +529,7 @@ const HomePage = () => {
                   <div className="d-flex flex-column gap-3">
                     <div className="skill">
                       <div className="d-flex justify-content-between align-items-center">
-                        <span>Front-End Development</span>
+                        <span>Front-End</span>
                         {/* <span>90%</span> */}
                         <Progress.Line percent={90} />
                       </div>
@@ -545,42 +542,42 @@ const HomePage = () => {
                     </div>
                     <div className="skill">
                       <div className="d-flex justify-content-between align-items-center">
-                        <span>Back-End Development</span>
+                        <span>Back-End</span>
                         {/* <span>85%</span> */}
                         <Progress.Line percent={85} />
                       </div>
-                      <div className="progress">
+                      {/* <div className="progress">
                         <div
                           className="progress-bar ninety"
                           data-width="85%"
                         ></div>
-                      </div>
+                      </div> */}
                     </div>
                     <div className="skill">
                       <div className="d-flex justify-content-between align-items-center">
-                        <span>Full-Stack Development</span>
+                        <span>Full-Stack</span>
                         {/* <span>88%</span> */}
                         <Progress.Line percent={85} />
                       </div>
-                      <div className="progress">
+                      {/* <div className="progress">
                         <div
                           className="progress-bar ninety"
                           data-width="88%"
                         ></div>
-                      </div>
+                      </div> */}
                     </div>
                     <div className="skill">
                       <div className="d-flex justify-content-between align-items-center">
-                        <span>Database Management</span>
+                        <span>MySQL</span>
                         {/* <span>80%</span> */}
                         <Progress.Line percent={85} />{" "}
                       </div>
-                      <div className="progress">
+                      {/* <div className="progress">
                         <div
                           className="progress-bar ninety"
                           data-width="80%"
                         ></div>
-                      </div>
+                      </div> */}
                     </div>
                     <div className="skill">
                       <div className="d-flex justify-content-between align-items-center">
@@ -588,12 +585,12 @@ const HomePage = () => {
                         {/* <span>95%</span> */}
                         <Progress.Line percent={85} />
                       </div>
-                      <div className="progress">
+                      {/* <div className="progress">
                         <div
                           className="progress-bar ninety"
                           data-width="95%"
                         ></div>
-                      </div>
+                      </div> */}
                     </div>
                     <div className="skill">
                       <div className="d-flex justify-content-between align-items-center">
@@ -601,12 +598,12 @@ const HomePage = () => {
                         {/* <span>87%</span> */}
                         <Progress.Line percent={85} />
                       </div>
-                      <div className="progress">
+                      {/* <div className="progress">
                         <div
                           className="progress-bar ninety"
                           data-width="87%"
                         ></div>
-                      </div>
+                      </div> */}
                     </div>
                   </div>
                 </div>

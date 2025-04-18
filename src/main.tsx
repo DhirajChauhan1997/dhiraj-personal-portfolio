@@ -6,7 +6,7 @@ import App from "./App.tsx";
 import "./index.css";
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <CustomProvider theme="dark">
+    <CustomProvider theme="light">
       <App />
     </CustomProvider>
   </StrictMode>

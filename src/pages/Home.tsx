@@ -816,7 +816,7 @@ const HomePage = () => {
                   </div>
 
                   <a
-                    href="assets/resume.html"
+                    href="/uploads/resume/ATS-Dhiraj Chauhan JAVA Full Stack.pdf"
                     className="download-cv position-relative"
                     download
                   >

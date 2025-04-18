@@ -533,12 +533,12 @@ const HomePage = () => {
                         {/* <span>90%</span> */}
                         <Progress.Line percent={90} />
                       </div>
-                      <div className="progress">
+                      {/* <div className="progress">
                         <div
                           className="progress-bar ninety"
                           data-width="90%"
                         ></div>
-                      </div>
+                      </div> */}
                     </div>
                     <div className="skill">
                       <div className="d-flex justify-content-between align-items-center">
@@ -1409,7 +1409,7 @@ const HomePage = () => {
                       <div className="icon-box">
                         <i className="ph ph-phone-call"></i>
                       </div>
-                      <p>+91 99047 XXXXX</p>
+                      <p>+91 99047 50956</p>
                     </div>
                   </div>
                   <div className="col-sm-6 col-xl-4 col-xxl-3">

@@ -1,4 +1,5 @@
 import { Progress } from "rsuite";
+import HeaderComponent from "../layout/Header";
 
 const HomePage = () => {
   const color = "#000000";
@@ -13,22 +14,7 @@ const HomePage = () => {
       {/* header section */}
 
       <div id="grain"></div>
-
-      <header className="header">
-        <div className="container d-flex align-items-center justify-content-between">
-          {/* <a href="index.html">
-            <img src="assets/images/logo.png" alt="logo" />
-          </a> */}
-
-          <button className="bg-transparent border-0 d-xl-none">
-            <div className="nav-icon">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-          </button>
-        </div>
-      </header>
+      <HeaderComponent />
 
       {/* main content */}
       <main className="container">
